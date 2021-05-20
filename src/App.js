@@ -42,25 +42,6 @@ const App = () => {
   const [city, setCity] = React.useState('');
   const [rows, setRows] = React.useState(['']);
 
-  // const resp = await (Axios.get('http://localhost:8000/api/branches/autocomplete/?q=rtgs&limit=14&offset=0'))
-
-  // console.log(resp)
-
-  // Axios.get('http://localhost:8000/api/branches/autocomplete/?q=rtgs&limit=14&offset=0')
-  // .then((res) => console.log(res))
-  // .catch((err) => console.log(err))
-
-  
-  // let response = () => {
-  //   return new Promise(function(resolve, reject) {
-  //     Axios.get('http://localhost:8000/api/branches', { params: { q: city , limit: 5 , offest: 0 }}).then(response => {
-  //       resolve(response);
-  //       setRows(response.data);
-  //     });
-  //   });
-  // };
-  // let responseData = response().then((res)=> console.log(res.data));
-
   useEffect(() => {
     const fetchData = async () => {
       const result = await Axios.get(
